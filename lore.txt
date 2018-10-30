@@ -1,0 +1,9 @@
+Elves are Dextrous and agile
+Orcs are Strong and Dextrous
+Humans are an all around class
+Dwarves are also dextrous and strong
+
+Humans don't like orcs
+Dwarves don't like elves
+Humans and dwarves are in a trade alliance
+Elves hat orcs
