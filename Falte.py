@@ -11,7 +11,8 @@
 import time
 import random
 import sys
-
+positive = ["Yes","yes","Sure","sure","ok","OK","Ok","oK",
+            "Okay","okay","Y","y","K","k","KK","kk","Kk","kK"]
 def wait(wait,NS):
     time.sleep(wait)
     if NS == False:
@@ -125,33 +126,3 @@ wait(6,False)
         raceI("pool","There is a tunic and a pair of boots.","There is a dress, a hair clip and a pair of boots.",
 
             ["Elf","elf","Elven","elven"],"You look around and see that you are in a tent with guards standing outside. They are ")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
