@@ -26,25 +26,24 @@ def dprint(s,ND):
         time.sleep(0.04)
     print("\n\n")
 
-def raceI(WTR,CLTHSM,CLTHSF,RCE,INTRO):
+def raceI(LCATN,BED,FRNTR,CLSM,CLSF,SRNDNGS,RACEP,WRNGM,INVM,WRNGF,INVF):
     WTR = str(WTR)
     CLTHSM = str(CLTHSM)
     CLTHSF = str(CLTHSF)
     INTRO = str(INTRO)
-    dprint(INTRO+RCE[2]+" .")
-    while urmom == 'strait':
-        dprint(" You can't help but feel nauseous while in the "+WTR+" of water.\n")
+    while loop == True:
+        dprint(LCATN,"\n")
         dprint("Would you like to get out?")
         response = input("\n\n>")
     
         if response in positive:
-            dprint("You get out of the water. ")
+            dprint("You get out of the ",BED)
             wait(3,True)
             if  gender == 'Female':
                 dprint(CLOTHSF)
             else:
                 dprint(CLOTHSM)
-            urmom = ("gay")
+            loop = False
             wait(10,False)
         else:
             dprint("Despite the Nausea, you think that you should stay in the water for a little while longer.\n")
@@ -113,8 +112,13 @@ dprint("Yes. That's right. You're a(n) " + race + ".")
 
 wait(6,False)
 
-if race == 'Elf':
 
-    raceI("pool","There is a tunic and a pair of boots.","There is a dress, a hair clip and a pair of boots.",
+#def race is (LCATN,BED,FRNTR,CLSM,CLSF,SRNDNGS,RACEP,WRNGM,INVM,WRNGF,INVF)
 
-        ["Elf","elf","Elven","elven"],"You look around and see that you are in a tent with guards standing outside. They are ")
+if race in racedefe:
+    raceI("You wake up on a cot in a tent.","cot","desk","There is a tunic and a pair of boots.","There is a dress, shears and a pair of boots.",
+    "Loud footsteps echo close outside. They are meatalic in nature. Elven soldiers.",["Elf","elf","Elven","elven"],["Tunic","Boots"],[],["Dress","Boots"],["Shears"])
+
+if race in racedefd:
+    raceI("You wake up on a bunk in a bunkhouse.","bunk","table","a tunic, a pair of old work boots, a pair of pants, and a belt.","a dress, a corsette, and a pair of boots.",
+    "You are alone in this room. you hear nothing outside of these walls.",["Dwarf","dwarf","Dwarven","dwarven"])
