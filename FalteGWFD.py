@@ -11,7 +11,7 @@
 import time
 import random
 import sys
-raceList = [' ', 'Orc', 'Human', 'Elf', 'Dwarf', '']
+raceList = ["Orc","Human","Elf","Dwarf"]
 positive = ["Yes","yes","Sure","sure","ok","OK","Ok","oK",
             "Okay","okay","Y","y","K","k","KK","kk","Kk","kK"]
 def wait(wait,NS):
@@ -103,8 +103,8 @@ wait(6,False)
 
 #pick your poison
 
-for i in range(1, 6):
-  dprint(raceList[i], end="")
+for i in range(0,3):
+  dprint(raceList[i],"\n")
     
 dprint("What is your race, " + Name + "?\n")
 race = input("\n\n>")
